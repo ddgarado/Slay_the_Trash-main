@@ -282,7 +282,7 @@ MonoBehaviour:
   modelAsset: {fileID: 5022602860645237092, guid: 1bf307b149da7394e900b3c6b2446ed2, type: 3}
   predictionText: {fileID: 945557344}
   captureButton: {fileID: 260170792}
-  sceneHandler: {fileID: 995146667}
+  sceneHandler: {fileID: 0}
 --- !u!1 &273030947
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,7 +460,7 @@ MonoBehaviour:
   modelAsset: {fileID: 5022602860645237092, guid: 1bf307b149da7394e900b3c6b2446ed2, type: 3}
   predictionText: {fileID: 1658517206}
   captureButton: {fileID: 380831834}
-  sceneHandler: {fileID: 995146667}
+  sceneHandler: {fileID: 0}
 --- !u!114 &380831833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,7 +871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &619270746
 Transform:
   m_ObjectHideFlags: 0
@@ -1063,51 +1063,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945557342}
   m_CullTransparentMesh: 1
---- !u!1 &995146665
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 995146666}
-  - component: {fileID: 995146667}
-  m_Layer: 0
-  m_Name: AIScannerSceneHandler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &995146666
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995146665}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 540, y: 370, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &995146667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995146665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32359f17686260c49ade63c8295ca4f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraHandler: {fileID: 1430522681}
 --- !u!1 &1194216307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,55 +1254,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1430522680
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1430522682}
-  - component: {fileID: 1430522681}
-  m_Layer: 0
-  m_Name: CameraHandler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1430522681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430522680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a23b8bc8d66d9f74da626e4da4d23f75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraFeedDisplay: {fileID: 1664117166}
-  modelAsset: {fileID: 5022602860645237092, guid: 1bf307b149da7394e900b3c6b2446ed2, type: 3}
-  predictionText: {fileID: 945557344}
-  captureButton: {fileID: 260170792}
-  sceneHandler: {fileID: 995146667}
---- !u!4 &1430522682
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430522680}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 462.35168, y: 1922.9802, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1468209345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,7 +1699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1821060793
 Transform:
   m_ObjectHideFlags: 0
@@ -2110,6 +2016,4 @@ SceneRoots:
   - {fileID: 1821060793}
   - {fileID: 619270746}
   - {fileID: 410665546}
-  - {fileID: 1430522682}
-  - {fileID: 995146666}
   - {fileID: 613832552}
