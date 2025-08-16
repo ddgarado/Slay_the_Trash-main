@@ -10,7 +10,8 @@ public class CameraHandler : MonoBehaviour
     public NNModel modelAsset;
     public Text predictionText;
     public Button captureButton;
-    public AIScannerSceneHandlerScript sceneHandler;
+
+    // public AIScannerSceneHandlerScript sceneHandler;
 
     private WebCamTexture webCamTexture;
     private bool isCameraReady = false;
@@ -90,7 +91,7 @@ public class CameraHandler : MonoBehaviour
         if (webCamTexture == null || cameraFeedDisplay == null) return;
 
         // Match display size to raw webcam resolution
-	cameraFeedDisplay.rectTransform.sizeDelta = new Vector2(webCamTexture.width, webCamTexture.height);
+        cameraFeedDisplay.rectTransform.sizeDelta = new Vector2(webCamTexture.width, webCamTexture.height);
 
 
         // Rotate 90° CCW and mirror horizontally
@@ -215,7 +216,7 @@ public class CameraHandler : MonoBehaviour
         }
 
 
-	sceneHandler?.LoadThrowingInstructionsScene();
+        // sceneHandler?.LoadThrowingInstructionsScene();
 
         input.Dispose();
         output.Dispose();
@@ -322,6 +323,7 @@ public class CameraHandler : MonoBehaviour
     {
         if (webCamTexture != null && webCamTexture.isPlaying)
         {
+            Debug.Log("StopCamera func triggered");
             webCamTexture.Stop();
             isCameraReady = false;
         }
