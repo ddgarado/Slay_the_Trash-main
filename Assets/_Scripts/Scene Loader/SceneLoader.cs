@@ -11,7 +11,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScanScene()
     {
-        SceneManager.LoadScene("AIScannerScene");
+        SceneManager.LoadScene("ScanScene");
     }
 
     public void LoadCardsScene()

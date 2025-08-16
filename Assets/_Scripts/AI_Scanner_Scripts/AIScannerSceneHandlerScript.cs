@@ -21,6 +21,7 @@ public class AIScannerSceneHandlerScript : MonoBehaviour
     {
         if (cameraHandler != null)
         {
+            Debug.Log("StopCamera func triggered");
             cameraHandler.StopCamera();
         }
     }
