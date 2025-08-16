@@ -3,12 +3,13 @@ using UnityEngine.UI;
 using System.Collections;
 using Unity.Barracuda;
 using System.IO;
+using TMPro;
 
 public class CameraHandler : MonoBehaviour
 {
     public RawImage cameraFeedDisplay;
     public NNModel modelAsset;
-    public Text predictionText;
+    public TMP_Text predictionText;
     public Button captureButton;
 
     // public AIScannerSceneHandlerScript sceneHandler;
