@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 15003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Slay the Trash
+  m_Name: "Android\u2122"
   m_EditorClassIdentifier: 
   m_AssetVersion: 1
   m_BuildTarget: 13
   m_Subtarget: 0
   m_PlatformId: b9b35072a6f44c2e863f17467ea3dc13
   m_PlatformBuildProfile:
-    rid: 6372212331988910153
+    rid: 5660364294530793545
   m_OverrideGlobalSceneList: 0
   m_Scenes: []
   m_ScriptingDefines: []
@@ -30,7 +30,7 @@ MonoBehaviour:
     - line: '|   AndroidProfiler: 0'
     - line: '|   AndroidFilterTouchesWhenObscured: 0'
     - line: '|   AndroidEnableSustainedPerformanceMode: 0'
-    - line: '|   defaultScreenOrientation: 4'
+    - line: '|   defaultScreenOrientation: 2'
     - line: '|   targetDevice: 2'
     - line: '|   useOnDemandResources: 0'
     - line: '|   accelerometerFrequency: 60'
@@ -82,8 +82,8 @@ MonoBehaviour:
     - line: '|   iosShowActivityIndicatorOnLoading: -1'
     - line: '|   androidShowActivityIndicatorOnLoading: -1'
     - line: '|   iosUseCustomAppBackgroundBehavior: 0'
-    - line: '|   allowedAutorotateToPortrait: 0'
-    - line: '|   allowedAutorotateToPortraitUpsideDown: 0'
+    - line: '|   allowedAutorotateToPortrait: 1'
+    - line: '|   allowedAutorotateToPortraitUpsideDown: 1'
     - line: '|   allowedAutorotateToLandscapeRight: 1'
     - line: '|   allowedAutorotateToLandscapeLeft: 1'
     - line: '|   useOSAutorotation: 1'
@@ -188,7 +188,7 @@ MonoBehaviour:
     - line: '|   androidMaxAspectRatio: 2.4'
     - line: '|   androidMinAspectRatio: 1'
     - line: '|   applicationIdentifier:'
-    - line: '|     Android: com.Group13.SlaytheTrash'
+    - line: '|     Android: com.DefaultCompany.Slay_the_Trash'
     - line: '|     Standalone: com.DefaultCompany.2D-URP'
     - line: '|   buildNumber:'
     - line: '|     Standalone: 0'
@@ -197,7 +197,7 @@ MonoBehaviour:
     - line: '|     tvOS: 0'
     - line: '|   overrideDefaultApplicationIdentifier: 1'
     - line: '|   AndroidBundleVersionCode: 1'
-    - line: '|   AndroidMinSdkVersion: 27'
+    - line: '|   AndroidMinSdkVersion: 23'
     - line: '|   AndroidTargetSdkVersion: 0'
     - line: '|   AndroidPreferredInstallLocation: 1'
     - line: '|   aotOptions: '
@@ -821,10 +821,10 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6372212331988910153
+    - rid: 5660364294530793545
       type: {class: AndroidPlatformBuildSettings, ns: UnityEditor.Android, asm: UnityEditor.Android.Extensions}
       data:
-        m_Development: 0
+        m_Development: 1
         m_ConnectProfiler: 0
         m_BuildWithDeepProfilingSupport: 0
         m_AllowDebugging: 0
@@ -837,11 +837,11 @@ MonoBehaviour:
         m_InstallInBuildFolder: 0
         m_BuildSubtarget: 0
         m_BuildSystem: 1
-        m_ExportAsGoogleAndroidProject: 0
+        m_ExportAsGoogleAndroidProject: 1
         m_DebugSymbolLevel: 1
         m_DebugSymbolFormat: 5
         m_CurrentDeploymentTargetId: __builtin__target_default
-        m_BuildType: 2
+        m_BuildType: 1
         m_BuildAppBundle: 0
         m_IPAddressToConnect: 
         m_SymlinkSources: 0
