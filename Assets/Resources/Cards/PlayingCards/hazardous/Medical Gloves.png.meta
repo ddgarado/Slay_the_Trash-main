@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Medical Gloves_0: -4014191366217713244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

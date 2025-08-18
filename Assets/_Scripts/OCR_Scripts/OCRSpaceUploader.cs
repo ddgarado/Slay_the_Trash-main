@@ -5,11 +5,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 
 public class OCRSpaceUploader : MonoBehaviour
 {
-    public Text ExtractedText; // Assign in Inspector
-    public Text CardGainText;  // Assign in Inspector
+    public TMP_Text ExtractedText; // Assign in Inspector
+    public TMP_Text CardGainText;  // Assign in Inspector
     public TextAsset labelsFile; // One label per line
     public TextAsset trashRulesFile; // Format: trash:bin per line
 

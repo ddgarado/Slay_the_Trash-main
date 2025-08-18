@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hazard Sword_0: 220332266797358102
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

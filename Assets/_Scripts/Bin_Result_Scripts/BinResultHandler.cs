@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using TMPro;
 
 public class BinResultHandler : MonoBehaviour
 {
-    public Text BinResult;
-    public Text BinType;
-    public Text CardType;
-    public Text Timer;
+    public TMP_Text BinResult;
+    public TMP_Text BinType;
+    public TMP_Text CardType;
 
     public RawImage CardGainedImage;
 
-    public Button MainMenuButton; // Assign in Inspector
+    // public Button MainMenuButton; // Assign in Inspector
 
     public TextAsset trashRulesFile; // Drag trashrules.txt here
 
@@ -21,8 +21,8 @@ public class BinResultHandler : MonoBehaviour
 
     private void Start()
     {
-        MainMenuButton.gameObject.SetActive(false); // Hide initially
-        MainMenuButton.onClick.AddListener(OnMainMenuButtonClicked);
+        // MainMenuButton.gameObject.SetActive(false); // Hide initially
+        // MainMenuButton.onClick.AddListener(OnMainMenuButtonClicked);
         StartCoroutine(CheckBinResult());
     }
 
@@ -53,7 +53,7 @@ public class BinResultHandler : MonoBehaviour
         if (isCorrect)
         {
             BinResult.text = "Correct Bin";
-            CardType.text = "Gained 1 Playing Card";
+            CardType.text = $"Gained 1 {ocrResult} Shard";
 
             string folder = $"Cards/PlayingCards/{predictedClass.Replace(" ", "_")}";
             Texture2D[] images = Resources.LoadAll<Texture2D>(folder);
@@ -69,9 +69,9 @@ public class BinResultHandler : MonoBehaviour
                 displayedImageName = null;
             }
 
-            Timer.text = "";
-            MainMenuButton.gameObject.SetActive(true);
-            MainMenuButton.interactable = true;
+            // Timer.text = "";
+            // MainMenuButton.gameObject.SetActive(true);
+            // MainMenuButton.interactable = true;
         }
         else
         {
@@ -91,31 +91,9 @@ public class BinResultHandler : MonoBehaviour
                 displayedImageName = null;
             }
 
-            MainMenuButton.gameObject.SetActive(false);
-            StartCoroutine(StartCountdown());
-        }
-    }
+            // MainMenuButton.gameObject.SetActive(false);
 
-    IEnumerator StartCountdown()
-    {
-        int countdown = 10;
-        while (countdown > 0)
-        {
-            Timer.text = $"Returning to Trashbin Scanner in {countdown} seconds";
-            yield return new WaitForSeconds(1f);
-            countdown--;
-        }
-
-        SaveDisplayedImageName();
-
-        BinResultSceneHandler sceneHandler = FindFirstObjectByType<BinResultSceneHandler>();
-        if (sceneHandler != null)
-        {
-            sceneHandler.LoadOCRScene();
-        }
-        else
-        {
-            Debug.LogWarning("BinResultSceneHandler not found in scene.");
+            SaveDisplayedImageName();
         }
     }
 

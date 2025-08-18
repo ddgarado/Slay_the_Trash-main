@@ -2,11 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.IO;
+using TMPro;
 
 public class OCRCameraHandler : MonoBehaviour
 {
     public RawImage cameraFeedDisplay;
-    public Text predictionText;
+    public TMP_Text predictionText;
     public Button captureButton;
 
     public OCRSpaceUploader ocrUploader;

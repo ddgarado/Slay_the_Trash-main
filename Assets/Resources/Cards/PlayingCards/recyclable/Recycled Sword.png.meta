@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Recycled Sword_0: -1590924100945327613
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
