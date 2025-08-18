@@ -1,12 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using TMPro;
 
 public class ThrowingInstructionsHandler: MonoBehaviour
 {
-    public TMP_Text trashTypeText;
-    public TMP_Text trashBinsText;
+    public Text trashTypeText;
+    public Text trashBinsText;
     public RawImage trashTypeImage;
     public TextAsset trashRulesAsset;
 
